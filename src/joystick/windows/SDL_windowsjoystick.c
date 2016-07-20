@@ -345,6 +345,10 @@ SDL_SYS_JoystickDetect()
         return;  /* thread hasn't signaled, nothing to do right now. */
     }
 
+	if (SYS_Joystick == NULL) {
+		return;
+	}
+
     SDL_LockMutex(s_mutexJoyStickEnum);
 
     s_bDeviceAdded = SDL_FALSE;
