@@ -27,3 +27,11 @@
 *.exe
 *.out
 *.app
+*.tlog
+*.log
+*.res
+*.pdb
+/VisualC/Win32/Debug
+/VisualC/Win32/Release
+*.sdf
+*.opendb
